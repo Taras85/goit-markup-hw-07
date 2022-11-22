@@ -96,8 +96,8 @@ body {
   color: #2196f3;
 }
 
-.mailing_form_btn:hover,
-.mailing_form_btn:focus,
+.mailing-form-btn:hover,
+.mailing-form-btn:focus,
 .button-main:hover,
 .button-main:focus {
   background-color: var(--secondary-btn);
@@ -428,7 +428,7 @@ body {
   text-underline-offset: 3px;
 }
 
-.user_agreement_lable {
+.user-agreement-lable {
   display: flex;
   align-items: center;
   user-select: none;
@@ -755,7 +755,7 @@ address {
   gap: 12px;
 }
 
-.mailing_form_input {
+.mailing-form-input {
   padding: 15px 16px;
   width: 358px;
   height: 50px;
@@ -767,11 +767,11 @@ address {
   outline: none;
   transition: border-color var(--scheme-effect);
 }
-.mailing_form_input:focus {
+.mailing-form-input:focus {
   border-color: var(--accent-color-btn);
 }
 
-.mailing_form_btn {
+.mailing-form-btn {
   position: relative;
   /* margin-left: 12px; */
   width: 200px;
