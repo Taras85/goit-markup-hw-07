@@ -221,7 +221,7 @@ body {
   color: var(--background-body-color-font-baner);
   margin-bottom: 30px;
 }
-.baner__btn {
+.buton--baner--size {
   min-width: 216px;
   min-height: 50px;
 }
@@ -408,14 +408,12 @@ body {
   height: 15px;
   outline: 2px solid transparent;
   outline-offset: -2px;
-
   border: 2px solid var(--font-color-title-h2-h3);
   border-radius: 2px;
   background-position: center;
   background-repeat: no-repeat;
-
   transition: background-color var(--scheme-effect), border-color var(--scheme-effect),
-    background-image var(--scheme-effect);
+  background-image var(--scheme-effect);
 }
 .modal-checkbox:checked {
   background-color: var(--accent-color-btn);
@@ -435,7 +433,7 @@ body {
   gap: 8px;
 }
 
-.user_agreement_lable > .modal-checkbox:focus {
+.user_agreement_lable >.modal-checkbox:focus {
   border: 2px solid var(--accent-color-btn);
   border-radius: 2px;
 }
@@ -448,9 +446,12 @@ body {
 
   color: var(--font-color-paragraph);
 }
-
+.buton--agreeement-size {
+  width: 200px;
+  height: 50px;
+}
 /* Блок наші пріоритети */
-.container-icon {
+.priorities__container-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,7 +462,7 @@ body {
   border-radius: 4px;
 }
 
-.priorities-caption {
+.priorities__caption {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -469,16 +470,13 @@ body {
   color: var(--font-color-title-h2-h3);
   margin-bottom: 10px;
 }
-.priorities-paragraph {
+.priorities__paragraph {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
-.agreement-btn {
-  width: 200px;
-  height: 50px;
-}
+
 
 /* чим ми займаємось */
 
