@@ -98,8 +98,8 @@ body {
 
 .mailing-form-btn:hover,
 .mailing-form-btn:focus,
-.button-main:hover,
-.button-main:focus {
+.button:hover,
+.button:focus {
   background-color: var(--secondary-btn);
 }
 
@@ -188,15 +188,15 @@ body {
 /* Головний блок головної сторінки */
 /* Блок банер */
 
-.container-base-baner {
+.container__baner {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.base-baner {
+.baner {
   background-color: var(--banner-footer-background-color);
 }
-.overlay-base-baner {
+.overlay__baner {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
@@ -211,7 +211,7 @@ body {
   background-size: cover;
   background-clip: padding-box;
 }
-.baner-title {
+.baner__title {
   text-align: center;
   width: 696px;
   font-size: 44px;
@@ -221,12 +221,12 @@ body {
   color: var(--background-body-color-font-baner);
   margin-bottom: 30px;
 }
-.baner-btn {
+.baner__btn {
   min-width: 216px;
   min-height: 50px;
 }
 
-.button-main {
+.button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
