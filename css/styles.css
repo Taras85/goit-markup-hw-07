@@ -426,14 +426,14 @@ body {
   text-underline-offset: 3px;
 }
 
-.user-agreement-lable {
+.user_agreement_lable {
   display: flex;
   align-items: center;
   user-select: none;
   gap: 8px;
 }
 
-.user_agreement_lable >.modal-checkbox:focus {
+.modal-checkbox:focus {
   border: 2px solid var(--accent-color-btn);
   border-radius: 2px;
 }
@@ -450,7 +450,10 @@ body {
   width: 200px;
   height: 50px;
 }
+
 /* Блок наші пріоритети */
+
+
 .priorities__container-icon {
   display: flex;
   justify-content: center;
