@@ -85,10 +85,10 @@ body {
   color: var(--font-color-paragraph);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.header-contacts:hover,
-.header-contacts:focus,
+.nav__link:hover,
+.nav__link:focus,
+.contacts__link:hover,
+.contacts__link:focus,
 .contact-footer:hover,
 .contact-footer:focus,
 .adds-direction:hover,
@@ -104,7 +104,7 @@ body {
 }
 
 /* Шапка сайта */
-.page-header {
+.header {
   border-bottom: 1px solid var(--header-border-color);
 }
 .container-page-header {
@@ -121,25 +121,25 @@ body {
   color: var(--accent-color-btn);
   margin-right: 92px;
 }
-.logo-header {
+.logo__color {
   color: var(--font-secondary-logo);
 }
 
-.site-nav {
+.nav__list {
   display: flex;
   align-items: center;
 }
-.site-nav .nav-item:not(:last-child) {
+.nav__list .nav__item:not(:last-child) {
   margin-right: var(--indent-nav);
 }
 
-.container-header-contacts {
+.contacts {
   display: flex;
   gap: var(--indent-nav);
   margin-left: auto;
 }
 
-.nav-link {
+.nav__link {
   position: relative;
   display: inline-flex;
   font-weight: 500;
@@ -154,11 +154,11 @@ body {
   transition: color var(--scheme-effect);
 }
 
-.site-nav > .nav-item > .current {
+.nav__list > .nav__item > .current {
   animation: shake-top 15s var(--scheme-effect) infinite both;
   color: var(--accent-color-btn);
 }
-.site-nav > .nav-item > .current::after {
+.nav__list > .nav__item > .current::after {
   position: absolute;
   content: '';
   display: inline-block;
@@ -168,7 +168,7 @@ body {
   bottom: -1px;
   background-color: var(--accent-color-btn);
 }
-.header-contacts {
+.contacts__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -181,7 +181,7 @@ body {
   gap: 10px;
   transition: color var(--scheme-effect);
 }
-.icon-header-contacts {
+.contacts__icon {
   fill: currentColor;
 }
 
