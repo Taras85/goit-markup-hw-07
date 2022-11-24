@@ -87,8 +87,8 @@ body {
 
 .nav__link:hover,
 .nav__link:focus,
-.contacts__link:hover,
-.contacts__link:focus,
+.header__contacts:hover,
+.header__contacts:focus,
 .contact-footer:hover,
 .contact-footer:focus,
 .adds-direction:hover,
@@ -121,7 +121,7 @@ body {
   color: var(--accent-color-btn);
   margin-right: 92px;
 }
-.logo__color {
+.logo__part--color {
   color: var(--font-secondary-logo);
 }
 
@@ -133,7 +133,7 @@ body {
   margin-right: var(--indent-nav);
 }
 
-.contacts {
+.header__group {
   display: flex;
   gap: var(--indent-nav);
   margin-left: auto;
@@ -154,11 +154,12 @@ body {
   transition: color var(--scheme-effect);
 }
 
-.nav__list > .nav__item > .current {
+.nav__link--current {
   animation: shake-top 15s var(--scheme-effect) infinite both;
   color: var(--accent-color-btn);
 }
-.nav__list > .nav__item > .current::after {
+
+.nav__link--current::after {
   position: absolute;
   content: '';
   display: inline-block;
@@ -168,7 +169,7 @@ body {
   bottom: -1px;
   background-color: var(--accent-color-btn);
 }
-.contacts__link {
+.header__contacts {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -181,7 +182,7 @@ body {
   gap: 10px;
   transition: color var(--scheme-effect);
 }
-.contacts__icon {
+.header__icon {
   fill: currentColor;
 }
 
@@ -361,7 +362,6 @@ body {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  
 }
 .modal-fields-input {
   font-weight: 400;
@@ -374,7 +374,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
-  
+
   transition: border-color var(--scheme-effect);
 }
 
@@ -413,7 +413,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   transition: background-color var(--scheme-effect), border-color var(--scheme-effect),
-  background-image var(--scheme-effect);
+    background-image var(--scheme-effect);
 }
 .modal-checkbox:checked {
   background-color: var(--accent-color-btn);
@@ -453,7 +453,6 @@ body {
 
 /* Блок наші пріоритети */
 
-
 .priorities__container-icon {
   display: flex;
   justify-content: center;
@@ -478,8 +477,6 @@ body {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
-
-
 
 /* чим ми займаємось */
 
