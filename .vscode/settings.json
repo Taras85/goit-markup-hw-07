@@ -15,4 +15,10 @@
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
   "liveServer.settings.port": 5501
+
+  // "ecsstractor_port.bem_nesting": true,
+  // "ecsstractor_port.add_comment": false,
+  // "ecsstractor_port.empty_line_before_nested_selector": false,
+  // "ecsstractor_port.brackets_newline_after": false,
+  // "ecsstractor_port.indentation": " ",
 }

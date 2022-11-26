@@ -1,0 +1,98 @@
+.header{
+    border-bottom: 1px solid var(--header-border-color);
+
+    &__container{
+        display: flex;
+        align-items: center;
+        }
+    }
+
+.group-contacts{
+    display: flex;
+    gap: var(--indent-nav);
+    margin-left: auto;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+        color: var(--font-color-paragraph);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        gap: 10px;
+        transition: color var(--scheme-effect);
+        }
+    &__icon{
+        fill: currentColor;
+        }
+    &__link:hover,
+    &__link:focus{
+        color: #2196f3;
+        }
+}
+// modal-wondow
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+
+    transition: opacity var(--scheme-effect), visibility var(--scheme-effect);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--background-body-color-font-baner);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-button-close:hover .modal-icon-close {
+    fill: var(--accent-color-btn);
+}
+
+.modal-icon-close {
+    fill: var(--font-secondary-logo);
+    transition: fill var(--scheme-effect);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    background: var(--background-body-color-font-baner);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--scheme-effect);
+}
+
+.backdrop.is-hidden .modal {
+    transform: skew(-40deg, 60deg) translateX(-80%) translateY(-100%);
+}

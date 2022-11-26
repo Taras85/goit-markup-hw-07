@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --font-color-paragraph: #757575;
   --background-body-color-font-baner: #ffffff;
   --accent-color-btn: #2196f3;
@@ -14,13 +14,13 @@
   --indent-main: 30px;
   --items: 4;
   --scheme-effect: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 /* Reset */
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  height: 1px;
+  height: 1px; 
   overflow: hidden;
   border: 0;
   padding: 0;
@@ -48,33 +48,33 @@ p {
 }
 img {
   display: block;
-}
+} */
 /* end reset */
 
 /* Start блочна модель */
-.container {
+/* .container {
   width: 1200px;
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
 
-  /* outline: 2px solid tomato;
-  outline-offset: -2px; */
-}
-.section {
+  outline: 2px solid tomato;
+  outline-offset: -2px;
+} */
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 /* налаштування сітки для відображення */
-.grid-set-list {
+/* .grid-set-list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent-main);
 }
 .grid-set-item {
   flex-basis: calc((100% - (var(--indent-main) * ((var(--items)) - 1))) / var(--items));
-}
-
+} */
+/* 
 html {
   scroll-behavior: smooth;
 }
@@ -83,12 +83,12 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-body-color-font-baner);
   color: var(--font-color-paragraph);
-}
+} */
 
-.nav__link:hover,
-.nav__link:focus,
-.header__contacts:hover,
-.header__contacts:focus,
+/* .nav__link:hover,
+.nav__link:focus, */
+/* .group-contacts__link:hover,
+.group-contacts__link:focus, */
 .adds__contact:hover,
 .adds__contact:focus,
 .adds__direction:hover,
@@ -98,13 +98,13 @@ body {
 
 /* .mailing-form-btn:hover,
 .mailing-form-btn:focus, */
-.button:hover,
+/* .button:hover,
 .button:focus {
   background-color: var(--secondary-btn);
-}
+} */
 
 /* Шапка сайта */
-.header {
+/* .header {
   border-bottom: 1px solid var(--header-border-color);
 }
 .header__container {
@@ -125,11 +125,11 @@ body {
   color: var(--font-secondary-logo);
 }
 
-.nav__list {
+.nav {
   display: flex;
   align-items: center;
 }
-/* .nav__list  */
+
 .nav__item:not(:last-child) {
   margin-right: var(--indent-nav);
 }
@@ -185,12 +185,12 @@ body {
 }
 .header__icon {
   fill: currentColor;
-}
+} */
 
 /* Головний блок головної сторінки */
 /* Блок банер */
 
-.baner {
+/* .baner {
   background-color: var(--banner-footer-background-color);
 }
 .baner__container {
@@ -223,13 +223,13 @@ body {
   text-transform: uppercase;
   color: var(--background-body-color-font-baner);
   margin-bottom: 30px;
-}
-.buton--baner--size {
+} */
+/* .buton--baner--size {
   min-width: 216px;
   min-height: 50px;
-}
+} */
 
-.button {
+/* .button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -245,9 +245,11 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color var(--scheme-effect);
-}
+} */
+
+
 /* modal-wondow */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -307,10 +309,12 @@ body {
 
 .backdrop.is-hidden .modal {
   transform: skew(-40deg, 60deg) translateX(-80%) translateY(-100%);
-}
+} */
+
+
 
 /* Модальна форма розмітка */
-.modal-form {
+/* .modal-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -447,11 +451,11 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--font-color-paragraph);
-}
-.buton--agreeement-size {
+} */
+/* .buton--agreeement-size {
   width: 200px;
   height: 50px;
-}
+} */
 
 /* Блок наші пріоритети */
 
@@ -604,7 +608,7 @@ body {
 
 
 /* Постійні кліенти */
-.partners {
+.partner__block {
   display: flex;
   flex-direction: column;
   align-items: center;
