@@ -1,18 +1,15 @@
-// utils
+//utils
 @import './utils/fonts';
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
 @import './utils/mixins';
-
-// Base
+// base
 @import './base/base';
 @import './base/reset';
 @import './base/grid-set';
 @import './base/animations';
-
-
-//layaut
+// layout
 @import './layout/header';
 @import './layout/contacts';
 @import './layout/logo';
@@ -21,8 +18,7 @@
 @import './layout/footer';
 @import './layout/adds';
 @import './layout/subscription';
-
-//components
+// components
 @import './components/section';
 @import './components/container';
 @import './components/title';
@@ -35,6 +31,18 @@
 @import './components/partner';
 @import './components/portfolio';
 @import './components/gallery';
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
