@@ -56,7 +56,7 @@ margin-left: auto;
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: #3f51b5ff;
     z-index: 999;
 
     transform: translateX(100%);
@@ -87,3 +87,21 @@ margin-left: auto;
     text-decoration: none;
 }
 
+
+.mobile-menu-contact {
+    margin-bottom: 30px;
+}
+
+.menu-nav-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40/34) ;
+    letter-spacing: 0.02em;
+    
+        color: #2196F3;
+}
+
+.mobile-menu-social{
+    display: flex;
+
+}
