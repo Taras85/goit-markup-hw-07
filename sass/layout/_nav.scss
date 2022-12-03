@@ -1,7 +1,6 @@
 .nav {
-    display: none;
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
     
     &__item:not(:last-child) {
         margin-right: var(--indent-nav);

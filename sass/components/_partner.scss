@@ -1,5 +1,5 @@
 .partner {
-  @extend %section;
+  @include section;
   
   &__block {
     @extend %container;
@@ -11,21 +11,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 768px) {
-        --items: 2;
-      }
-    
-      @media screen and (min-width: 768px) {
-        --items: 3;
-      }
-    
-      @media screen and (min-width: 1200px) {
-        --items: 6;
-      }
+    gap: 30px;
   }
 
   &__item {
-    // width: 170px;
+    width: 170px;
     height: 92px;
   }
 
